@@ -1,0 +1,25 @@
+* {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+.header-img img{
+    width: 100%;
+    height: 1000px;
+}
+.parallax-img {
+    background-image: url(./img/headerscreencode.jpg);
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.profilepicme {
+    height: 200px;
+    width: 400px;
+}
+.fill-svg {
+    fill: white;
+}
