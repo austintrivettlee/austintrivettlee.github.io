@@ -3,6 +3,7 @@
     padding: auto;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
+    scroll-behavior: smooth;
 }
 .header-img img{
     width: 100%;
@@ -10,16 +11,108 @@
 }
 .parallax-img {
     background-image: url(./img/headerscreencode.jpg);
-    min-height: 600px;
+    min-height: 800px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .profilepicme {
+    flex: 35;
     height: 200px;
     width: 400px;
 }
 .fill-svg {
     fill: white;
+}
+h1 {
+    color: white;
+}
+p {
+    text-align: center;
+}
+.navbar {
+    background-color: rgba(32, 30, 30, 0.944);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+    min-height: 50px;
+}
+.navbar ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    font-size: 12px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.white {
+    color: white;
+}
+.profile {
+    display: flex;
+    width: 100%;
+}
+.card {
+    display: flex;
+    width: 90%;
+    height: 200px;
+    flex: 65;
+}
+.profile-header {
+    display: flex;
+    min-height: 80px;
+    justify-content: center;
+    font-size: 40px;
+    font-weight:bolder;
+    background-color: rgba(32, 30, 30);
+    color: white;
+}
+.card-body {
+    padding: 10px;
+}
+
+.blank-space {
+    min-height: 100px;
+    width: 100%;
+}
+span {
+    color: aqua;
+}
+.nav-item {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+    padding: 5px;
+}
+.nav-item:hover {
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    transition: 1s;
+}
+footer {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+.education {
+    display: flex;
+    width: 90%;
+}
+.presentedu {
+    flex: 1;
+    border: 5px solid rgb(32,30,30);
+}
+.presentedu img {
+    width: 200px;
+    border-radius: 15px;
+}
+.previousedu {
+    flex: 3;
 }
