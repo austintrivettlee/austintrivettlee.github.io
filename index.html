@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 
-<body>
+<body class="background">
 
     <nav
         class="navbar navbar-expand-lg bg-dark navbar-dark text-light justify-content-around align-content-center fixed-top">
@@ -54,92 +54,99 @@
             </li>
         </ul>
     </nav>
-    <div class="parallax-img"> Austin Lee</div>
+    <div class="parallax-img"> 
+        <h2>Austin Trivett Lee</h2>
+        <p>Software Engineer</p>
+    </div>
     <div class="spacer-header" id="aboutme">
         <p>
             About<span>Me</span>
         </p>
     </div>
-    <div class="profile">
+    <div class="profile background">
         <div class="card">
             <div class="card-body">
                 <p>
                     Hello, I'm Austin! I am currently enrolled in Coding Dojo's Full-time Software
-                    Engineering program and Austin Peay State University for Computer Information Technology (BSc). I am a Veteran of the US ARMY. I am looking to use my exceptional
+                    Engineering program and Austin Peay State University for Computer Information Technology (BSc). I am
+                    a Veteran of the US ARMY. I am looking to use my exceptional
                     attention to detail and problem solving skills within the tech industry.
                 </p>
             </div>
         </div>
         <img class="profilepicme rounded-3 mt-3 mb-3" src="./img/me.JPG" alt="a picture of austin lee">
     </div>
-    <div class="blank-space"></div>
-    <div class="projects" id="projects"></div>
+
+    <div class="spacer-header" id="education">
+        <p>
+            <span>My</span>Projects
+        </p>
+    </div>
+    <div class="projects background" id="projects">
+        <div class="project1"></div>
+        <div class="project2"></div>
+        <div class="project3"></div>
+        <div class="project4"></div>
+    </div>
     <div class="spacer-header" id="education">
         <p>
             <span>My</span>Education
         </p>
     </div>
-    <div class="education">
+    <div class="education background">
         <div class="presentedu">
             <img src="./img/cd-logo.png" alt="coding dojo logo">
             <h4> Full-Time Software Development</h4>
             <p> July 2023 - Present </p>
         </div>
 
-    <table>
-        <tr>
-            <td>
-                <img class="eduimg" src="./img/APSU.png" alt="austin peay state university logo">
-            </td>
-            <td>
-                <h4>Austin Peay State University - B.S Computer Information Technology</h4>
-            </td>
-            <td>
-                <p>Sept 2022 - Present</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img class="eduimg" src="./img/guildford.jpg" alt="guildford college logo">
-            </td>
-            <td>
-                <h4>Guildford College - BTEC Lvl 3 Sub. Diploma Applied Science</h4>
-            </td>
-            <td>
-                <p>Sept 2014 - July 2015</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img class="eduimg" src="./img/chessington.jpg" alt="chessington community college logo">
-            </td>
-            <td>
-                <h4>Austin Peay State University - B.S Computer Information Technology</h4>
-            </td>
-            <td>
-                <p>Sept 2007 - July 2012</p>
-            </td>
-        </tr>
-    </table>
-        <!-- <div class="previousedu">
-            <div class="apsu edu">
-                <img class="eduimg" src="./img/APSU.png" alt="austin peay state university logo">
-                <h4>Austin Peay State University - B.S Computer Information Technology</h4>
-                <p>Sept 2022 - Present</p>
-            </div>
-            <div class="guildford edu">
-                <img class="eduimg" src="./img/guildford.jpg" alt="guildford college logo">
-                <h4>Guildford College - BTEC Lvl 3 Sub. Diploma Applied Science</h4>
-                <p>July 2015</p>
-            </div>
-            <div class="chessington edu">
-                <img class="eduimg" src="./img/chessington.jpg" alt="chessington community college logo">
-                <h4>Chessington Community College - GCSE (HS Equivalent)</h4>
-                <p>Sept 2007 - July 2012</p>
-            </div> -->
+        <table>
+            <tr>
+                <td>
+                    <img class="eduimg" src="./img/APSU.png" alt="austin peay state university logo">
+                </td>
+                <td>
+                    <h4>Austin Peay State University - B.S Computer Information Technology</h4>
+                </td>
+                <td>
+                    <p>Sept 2022 - Present</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class="eduimg" src="./img/guildford.jpg" alt="guildford college logo">
+                </td>
+                <td>
+                    <h4>Guildford College - BTEC Lvl 3 Sub. Diploma Applied Science</h4>
+                </td>
+                <td>
+                    <p>Sept 2014 - July 2015</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class="eduimg" src="./img/chessington.jpg" alt="chessington community college logo">
+                </td>
+                <td>
+                    <h4>Chessington Community College - GCSE (HS Equivalent)</h4>
+                </td>
+                <td>
+                    <p>Sept 2007 - July 2012</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="spacer-header" id="education">
+        <p>
+            Contact<span>Me</span>
+        </p>
+    </div>
+    <div class="contact">
+        <div class="formcontainer">
+                <p>Name:</p>
+                <input type="text" name="" id="">
         </div>
     </div>
-    <div class="contact"></div>
 
     <footer> &copy; Copyright Austin Trivett Lee - 2023</footer>
 

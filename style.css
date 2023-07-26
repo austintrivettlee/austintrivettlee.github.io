@@ -4,18 +4,36 @@
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
     scroll-behavior: smooth;
+    background-color: transparent;
+    color: white;
 }
 .header-img img{
     width: 100%;
     height: 1000px;
 }
 .parallax-img {
-    background-image: url(./img/headerscreencode.jpg);
+    background-image: url(./img/cover2.jpg);
     min-height: 800px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+}
+.parallax-img h2 {
+    position: absolute;
+    top: 350px;
+    left: 35%;
+    font-size: 60px;
+    color: #FCA63E;
+    
+}
+.parallax-img p {
+    position: absolute;
+    top: 435px;
+    left: 50%;
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
 }
 .profilepicme {
     height: 400px;
@@ -40,6 +58,7 @@ p {
     width: 100%;
     min-height: 50px;
     white-space:nowrap;
+    z-index: 100;
 }
 .navbar ul {
     display: flex;
@@ -86,7 +105,7 @@ a {
     width: 100%;
 }
 span {
-    color: aqua;
+    color: #FCA63E;
 }
 .nav-item {
     height: 30px;
@@ -111,10 +130,11 @@ footer {
     width: 90%;
     gap: 20px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 .presentedu {
     text-align: center;
-    flex: 25;
+    flex: 40;
     border: 5px solid rgb(121, 120, 120);
     border-radius: 15px;
     padding: 10px;
@@ -125,21 +145,24 @@ footer {
     width: 200px;
     border-radius: 15px;
 }
-.previousedu {
-    flex: 75;
-    border: 5px solid rgb(121, 120, 120);
-    height: 275px;
-    border-radius: 15px;
-    padding: 15px;
-    padding-left: 20px;
-}
-.edu {
-    display: flex;
-    margin: 10px 0;
-    justify-content:left;
-    align-content: flex-start;
-}
 .eduimg {
     width: 70px;
     margin-left: 0;
+}
+table {
+    flex: 60;
+    border: 5px solid rgb(121, 120, 120);
+    border-radius: 15px;
+    padding: 10px;
+    height: 275px;
+    border-spacing: 5px;
+}
+.background {
+    background-color: darkslategray;
+}
+form {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
