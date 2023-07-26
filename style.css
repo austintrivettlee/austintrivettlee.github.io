@@ -13,7 +13,7 @@
 }
 .parallax-img {
     background-image: url(./img/cover2.jpg);
-    min-height: 800px;
+    min-height: 845px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@
 }
 .parallax-img2 {
     background-image: url(./img/mount.jpg);
-    min-height: 500px;
+    min-height: 300px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -139,7 +139,7 @@ footer {
 }
 .presentedu {
     text-align: center;
-    flex: 40;
+    flex: 30;
     border: 5px solid rgb(121, 120, 120);
     border-radius: 15px;
     padding: 10px;
@@ -155,7 +155,7 @@ footer {
     margin-left: 0;
 }
 table {
-    flex: 60;
+    flex: 70;
     border: 5px solid rgb(121, 120, 120);
     border-radius: 15px;
     padding: 10px;
