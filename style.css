@@ -20,6 +20,15 @@
     background-size: cover;
     display: flex;
 }
+.parallax-img2 {
+    background-image: url(./img/mount.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
 .parallax-img h2 {
     position: absolute;
     top: 350px;
@@ -35,8 +44,8 @@
     font-size: 50px;
 }
 .profilepicme {
-    height: 400px;
-    min-width: 800px;
+    height: 300px;
+    min-width: 600px;
     border-bottom-left-radius: 15px;
 }
 .fill-svg {
@@ -58,6 +67,7 @@ p {
     min-height: 50px;
     white-space:nowrap;
     z-index: 100;
+    scroll-margin-top: 50px;
 }
 .navbar ul {
     display: flex;
@@ -76,13 +86,6 @@ a {
     display: flex;
     width: 100%;
 }
-.card {
-    display: flex;
-    width: 90%;
-    height: 200px;
-    flex: 65;
-    min-width: 555px
-}
 .spacer-header {
     display: flex;
     min-height: 60px;
@@ -91,12 +94,15 @@ a {
     font-weight:bolder;
     background-color: rgba(32, 30, 30);
     color: white;
-    position: sticky;
-    top: 50px;
 }
 .card-body {
     padding: 10px;
-    overflow: none;
+    overflow: hidden;
+    display: flex;
+    width: 90%;
+    height: 200px;
+    flex: 65;
+    min-width: 555px;
 }
 
 .blank-space {
@@ -167,4 +173,27 @@ form {
 }
 input {
     border-radius: 5px;
+}
+.project {
+    background-image: url(./img/stars.jpg);
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.card-left {
+    width: 50%;
+    height: 250px;
+    background-color: rgb(55,59,59);
+    margin-left: 10%;
+    border-radius: 10px;
+}
+.card-right {
+    width: 50%;
+    height: 250px;
+    background-color: rgb(55,59,59);
+    margin-left: 40%;
+    border-radius: 10px;
 }
