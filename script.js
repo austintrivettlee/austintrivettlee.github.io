@@ -24,34 +24,34 @@ document.getElementById('mode-switcher').addEventListener('click', function () {
         img3.classList.add('background-projects-dark');
         butt.classList.remove('button-dark');
         butt.classList.add('button-light');
-        for(var i = 0; i < navbutt.length; i++) {
+        for (var i = 0; i < navbutt.length; i++) {
             navbutt[i].classList.remove('hover-dark')
         }
-        for(var i = 0; i < navbutt.length; i++) {
+        for (var i = 0; i < navbutt.length; i++) {
             navbutt[i].classList.add('hover-light')
         }
-        for(var i = 0; i < hl.length; i++) {
+        for (var i = 0; i < hl.length; i++) {
             hl[i].classList.remove('light-hl');
         }
-        for(var i = 0; i < hl.length; i++) {
+        for (var i = 0; i < hl.length; i++) {
             hl[i].classList.add('dark-hl');
         }
-        for(var i = 0; i < text.length; i++) {
+        for (var i = 0; i < text.length; i++) {
             text[i].classList.remove('black');
         }
-        for(var i = 0; i < text.length; i++) {
+        for (var i = 0; i < text.length; i++) {
             text[i].classList.add('white');
         }
-        for(var i =0; i < nav.length; i++){
+        for (var i = 0; i < nav.length; i++) {
             nav[i].classList.remove('navbar-light');
         }
-        for(var i =0; i < nav.length; i++){
+        for (var i = 0; i < nav.length; i++) {
             nav[i].classList.add('navbar-dark');
         }
-        for(var i =0; i < back.length; i++){
+        for (var i = 0; i < back.length; i++) {
             back[i].classList.remove('background-light');
         }
-        for(var i =0; i < back.length; i++){
+        for (var i = 0; i < back.length; i++) {
             back[i].classList.add('background-dark');
         }
 
@@ -69,28 +69,34 @@ document.getElementById('mode-switcher').addEventListener('click', function () {
         img3.classList.add('background-projects-light');
         butt.classList.remove('button-light');
         butt.classList.add('button-dark');
-        for(var i = 0; i < hl.length; i++) {
+        for (var i = 0; i < navbutt.length; i++) {
+            navbutt[i].classList.remove('hover-light')
+        }
+        for (var i = 0; i < navbutt.length; i++) {
+            navbutt[i].classList.add('hover-dark')
+        }
+        for (var i = 0; i < hl.length; i++) {
             hl[i].classList.remove('dark-hl');
         }
-        for(var i = 0; i < hl.length; i++) {
+        for (var i = 0; i < hl.length; i++) {
             hl[i].classList.add('light-hl');
         }
-        for(var i = 0; i < text.length; i++) {
+        for (var i = 0; i < text.length; i++) {
             text[i].classList.remove('white');
         }
-        for(var i = 0; i < text.length; i++) {
+        for (var i = 0; i < text.length; i++) {
             text[i].classList.add('black');
         }
-        for(var i = 0; i < nav.length; i++){
+        for (var i = 0; i < nav.length; i++) {
             nav[i].classList.remove('navbar-dark');
         }
-        for(var i = 0; i < nav.length; i++){
+        for (var i = 0; i < nav.length; i++) {
             nav[i].classList.add('navbar-light');
         }
-        for(var i =0; i < back.length; i++){
+        for (var i = 0; i < back.length; i++) {
             back[i].classList.remove('background-dark');
         }
-        for(var i =0; i < back.length; i++){
+        for (var i = 0; i < back.length; i++) {
             back[i].classList.add('background-light');
         }
     }
@@ -117,14 +123,14 @@ function handleScroll() {
     var cardLeft1 = document.querySelector('.card-left1');
     if (isElementInViewport(cardLeft1)) {
         cardLeft1.classList.add('slide-in1');
-        window.removeEventListener('scroll', handleScroll); 
+        window.removeEventListener('scroll', handleScroll);
     }
 }
 function handleScroll1() {
     var cardLeft2 = document.querySelector('.card-left2');
     if (isElementInViewport(cardLeft2)) {
         cardLeft2.classList.add('slide-in1');
-        window.removeEventListener('scroll', handleScroll1); 
+        window.removeEventListener('scroll', handleScroll1);
     }
 }
 
@@ -133,7 +139,7 @@ function handleScroll2() {
     var cardRight1 = document.querySelector('.card-right1');
     if (isElementInViewport(cardRight1)) {
         cardRight1.classList.add('slide-in2');
-        window.removeEventListener('scroll', handleScroll2); 
+        window.removeEventListener('scroll', handleScroll2);
     }
 }
 
@@ -142,6 +148,6 @@ function handleScroll3() {
     var cardRight2 = document.querySelector('.card-right2');
     if (isElementInViewport(cardRight2)) {
         cardRight2.classList.add('slide-in2');
-        window.removeEventListener('scroll', handleScroll3); 
+        window.removeEventListener('scroll', handleScroll3);
     }
 }

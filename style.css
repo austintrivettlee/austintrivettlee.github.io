@@ -58,7 +58,7 @@
     top: 350px;
     left: 30%;
     font-size: 60px;
-    color: #FCA63E;
+    color: #EE9900;
     font-weight: bolder;
 }
 
@@ -98,6 +98,7 @@
 
 h1 {
     color: white;
+    margin: 10px 12%;
 }
 
 .card-body p {
@@ -106,15 +107,17 @@ h1 {
 }
 
 .navbar-light {
-    background-color: rgba(200, 220, 204, 0.944);
+    background-color: rgba(200, 220, 204);
 }
+
 .navbar-dark {
-    background-color: rgba(32, 30, 30, 0.944);
+    background-color: rgba(32, 30, 30);
 
 }
+
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     width: 100%;
     min-height: 50px;
@@ -122,9 +125,11 @@ h1 {
     z-index: 100;
     scroll-margin-top: 50px;
 }
+
 .nav {
     margin: 0;
     padding: 0;
+    justify-content: center;
 }
 
 .navbar ul {
@@ -144,11 +149,14 @@ a {
     color: white;
     fill: white;
 }
+
 .black {
     color: rgb(23, 38, 38);
-    fill: rgb(23, 38, 38);;
+    fill: rgb(23, 38, 38);
+    ;
     font-weight: 600;
 }
+
 .profile {
     display: flex;
     width: 100%;
@@ -196,13 +204,14 @@ a {
     padding: 0px 10px;
 }
 
-.hover-light:hover {
-    background-color: rgb(255, 255, 255);
+.hover-dark:hover {
+    background-color: rgb(225, 159, 159);
     border-radius: 10px;
     transition: 1s;
 }
-.hover-dark:hover {
-    background-color: rgb(255, 255, 255);
+
+.hover-light:hover {
+    background-color: rgb(68, 68, 68);
     border-radius: 10px;
     transition: 1s;
 }
@@ -252,6 +261,7 @@ table {
 .background-dark {
     background-color: rgb(55, 59, 59);
 }
+
 .background-light {
     background-color: rgb(230, 229, 229);
 }
@@ -281,6 +291,7 @@ input {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .background-projects-light {
     height: 100%;
     width: 100%;
@@ -290,6 +301,7 @@ input {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .card-left1 {
     width: 50%;
     height: 200px;
@@ -297,6 +309,7 @@ input {
     border-radius: 10px;
     opacity: 0;
 }
+
 .card-left2 {
     width: 50%;
     height: 200px;
@@ -312,6 +325,7 @@ input {
     border-radius: 10px;
     opacity: 0;
 }
+
 .card-right2 {
     width: 50%;
     height: 200px;
@@ -319,9 +333,11 @@ input {
     border-radius: 10px;
     opacity: 0;
 }
+
 .slide-in1 {
     animation: slideInLeft 1.5s ease forwards;
 }
+
 .slide-in2 {
     animation: slideInRight 1.5s ease forwards;
 }
@@ -331,6 +347,7 @@ input {
         transform: translateX(-100%);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -342,6 +359,7 @@ input {
         transform: translateX(100%);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -364,6 +382,7 @@ form textarea {
     padding: 15px;
     margin-bottom: 20px;
     border: 2px solid #9d9b9b;
+    border-radius: 3px;
 }
 
 .button-dark {
@@ -374,6 +393,7 @@ form textarea {
     width: 100%;
     cursor: pointer;
 }
+
 .button-light {
     background-color: #fca63ed8;
     color: #ffffff;
@@ -397,6 +417,7 @@ form button:hover {
     border-radius: 3px;
     border: none;
 }
+
 .mode-switcher-light {
     background-color: #f2100c84;
     border-radius: 3px;
