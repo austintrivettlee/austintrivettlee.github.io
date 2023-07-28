@@ -98,8 +98,8 @@ document.getElementById('mode-switcher').addEventListener('click', function () {
 
 
 
-function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
+function isElementInViewport(ele) {
+    var rect = ele.getBoundingClientRect();
     return (
         rect.top >= 0 &&
         rect.left >= 0 &&
