@@ -99,7 +99,10 @@
 h1 {
     color: white;
 }
-
+.card-body{
+    vertical-align: auto;
+    margin: auto 0;
+}
 .card-body p {
     text-align: center;
     font-size: 18px;
@@ -233,7 +236,10 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
+.parallax-img2-dark img, .parallax-img-light img {
+    height: 200px;
+    margin: auto;
+}
 .presentedu {
     text-align: center;
     flex: 30;
@@ -284,6 +290,7 @@ input {
 .project-dark {
     min-height: 225px;
     display: flex;
+    align-items: center;
 }
 
 .background-projects-dark {
@@ -420,14 +427,12 @@ form button:hover {
     background-color: #FCA63E84;
     border-radius: 3px;
     border: none;
-    margin-right: 20px;
 }
 
 .mode-switcher-light {
     background-color: #f2100c84;
     border-radius: 3px;
     border: none;
-    margin-right: 20px;
 }
 .theme-butt {
     flex: 10;
