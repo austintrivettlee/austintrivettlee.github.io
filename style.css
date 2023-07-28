@@ -1,6 +1,6 @@
 * {
-    margin: auto;
-    padding: auto;
+    margin: 0 auto;
+    padding: 0 auto;
     box-sizing: border-box;
     font-family: 'Roboto Slab', monospace;
     scroll-behavior: smooth;
@@ -98,7 +98,6 @@
 
 h1 {
     color: white;
-    margin: 10px 12%;
 }
 
 .card-body p {
@@ -117,8 +116,7 @@ h1 {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
-    align-content: center;
+    align-items: center;
     width: 100%;
     min-height: 50px;
     white-space: nowrap;
@@ -126,10 +124,12 @@ h1 {
     scroll-margin-top: 50px;
 }
 
+
 .nav {
     margin: 0;
     padding: 0;
-    justify-content: center;
+    justify-content: space-around;
+    flex: 80;
 }
 
 .navbar ul {
@@ -137,6 +137,11 @@ h1 {
     gap: 10px;
     list-style-type: none;
     font-size: 14px;
+    flex: 60;
+}
+.navbar li {
+
+    align-items: center;
 }
 
 a {
@@ -198,10 +203,9 @@ a {
 .nav-item {
     height: 30px;
     display: flex;
-    justify-content: center;
-    align-content: center;
     gap: 5px;
     padding: 0px 10px;
+    margin: 0;
 }
 
 .hover-dark:hover {
@@ -416,14 +420,21 @@ form button:hover {
     background-color: #FCA63E84;
     border-radius: 3px;
     border: none;
+    margin-right: 20px;
 }
 
 .mode-switcher-light {
     background-color: #f2100c84;
     border-radius: 3px;
     border: none;
+    margin-right: 20px;
 }
-
+.theme-butt {
+    flex: 10;
+}
 .title {
     font-family: 'Roboto Mono';
+    flex: 10;
+    justify-content: center;
+    text-align: center;
 }
