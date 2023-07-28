@@ -8,6 +8,7 @@ document.getElementById('mode-switcher').addEventListener('click', function () {
     var nav = document.querySelectorAll('.navbarid')
     var back = document.querySelectorAll('.backgroundid')
     var butt = document.querySelector('.buttonid')
+    var navbutt = document.querySelectorAll('.nav-item')
 
     if (body.classList.contains('light')) {
         this.innerText = 'Switch to Light Mode';
@@ -23,6 +24,12 @@ document.getElementById('mode-switcher').addEventListener('click', function () {
         img3.classList.add('background-projects-dark');
         butt.classList.remove('button-dark');
         butt.classList.add('button-light');
+        for(var i = 0; i < navbutt.length; i++) {
+            navbutt[i].classList.remove('hover-dark')
+        }
+        for(var i = 0; i < navbutt.length; i++) {
+            navbutt[i].classList.add('hover-light')
+        }
         for(var i = 0; i < hl.length; i++) {
             hl[i].classList.remove('light-hl');
         }
@@ -88,6 +95,9 @@ document.getElementById('mode-switcher').addEventListener('click', function () {
         }
     }
 });
+
+
+
 function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
@@ -99,28 +109,39 @@ function isElementInViewport(el) {
 }
 
 window.addEventListener('scroll', handleScroll);
+window.addEventListener('scroll', handleScroll1);
+window.addEventListener('scroll', handleScroll2);
+window.addEventListener('scroll', handleScroll3);
 
 function handleScroll() {
-    var cardLeft1 = document.querySelector('.card-Left1');
-    var cardLeft2 = document.querySelector('.card-Left2');
-    if (isElementInViewport(cardLeft1) || isElementInViewport(cardLeft2)) {
+    var cardLeft1 = document.querySelector('.card-left1');
+    if (isElementInViewport(cardLeft1)) {
         cardLeft1.classList.add('slide-in1');
-        cardLeft2.classList.add('slide-in1');
         window.removeEventListener('scroll', handleScroll); 
     }
 }
-
-function handleScroll() {
-    var cardLeft1 = document.querySelector('.card-Left1');
-    var cardLeft2 = document.querySelector('.card-Left2');
-    if (isElementInViewport(cardLeft1) || isElementInViewport(cardLeft2)) {
-        cardLeft1.classList.add('slide-in1');
+function handleScroll1() {
+    var cardLeft2 = document.querySelector('.card-left2');
+    if (isElementInViewport(cardLeft2)) {
         cardLeft2.classList.add('slide-in1');
-    var cardRight1 = document.querySelector('.card-right1');
-    var cardRight2 = document.querySelector('.card-right2');
-    if (isElementInViewport(cardRight1) || isElementInViewport(cardRight2)) {
-        cardRight1.classList.add('slide-in2');
-        cardRight2.classList.add('slide-in2');
         window.removeEventListener('scroll', handleScroll1); 
+    }
+}
+
+
+function handleScroll2() {
+    var cardRight1 = document.querySelector('.card-right1');
+    if (isElementInViewport(cardRight1)) {
+        cardRight1.classList.add('slide-in2');
+        window.removeEventListener('scroll', handleScroll2); 
+    }
+}
+
+
+function handleScroll3() {
+    var cardRight2 = document.querySelector('.card-right2');
+    if (isElementInViewport(cardRight2)) {
+        cardRight2.classList.add('slide-in2');
+        window.removeEventListener('scroll', handleScroll3); 
     }
 }
