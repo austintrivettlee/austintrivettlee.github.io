@@ -99,10 +99,12 @@
 h1 {
     color: white;
 }
-.card-body{
+
+.card-body {
     vertical-align: auto;
     margin: auto 0;
 }
+
 .card-body p {
     text-align: center;
     font-size: 18px;
@@ -142,6 +144,7 @@ h1 {
     font-size: 14px;
     flex: 60;
 }
+
 .navbar li {
 
     align-items: center;
@@ -212,13 +215,13 @@ a {
 }
 
 .hover-dark:hover {
-    background-color: rgb(225, 159, 159);
+    background-color: rgb(68, 68, 68);
     border-radius: 10px;
     transition: 1s;
 }
 
 .hover-light:hover {
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(225, 159, 159);
     border-radius: 10px;
     transition: 1s;
 }
@@ -236,10 +239,13 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.parallax-img2-dark img, .parallax-img-light img {
+
+.parallax-img2-dark img,
+.parallax-img2-light img {
     height: 200px;
     margin: auto;
 }
+
 .presentedu {
     text-align: center;
     flex: 30;
@@ -434,9 +440,11 @@ form button:hover {
     border-radius: 3px;
     border: none;
 }
+
 .theme-butt {
     flex: 10;
 }
+
 .title {
     font-family: 'Roboto Mono';
     flex: 10;

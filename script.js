@@ -25,10 +25,10 @@ document.getElementById('mode-switcher').addEventListener('click', function () {
         butt.classList.remove('button-dark');
         butt.classList.add('button-light');
         for (var i = 0; i < navbutt.length; i++) {
-            navbutt[i].classList.remove('hover-dark')
+            navbutt[i].classList.remove('hover-light')
         }
         for (var i = 0; i < navbutt.length; i++) {
-            navbutt[i].classList.add('hover-light')
+            navbutt[i].classList.add('hover-dark')
         }
         for (var i = 0; i < hl.length; i++) {
             hl[i].classList.remove('light-hl');
@@ -70,10 +70,10 @@ document.getElementById('mode-switcher').addEventListener('click', function () {
         butt.classList.remove('button-light');
         butt.classList.add('button-dark');
         for (var i = 0; i < navbutt.length; i++) {
-            navbutt[i].classList.remove('hover-light')
+            navbutt[i].classList.remove('hover-dark')
         }
         for (var i = 0; i < navbutt.length; i++) {
-            navbutt[i].classList.add('hover-dark')
+            navbutt[i].classList.add('hover-light')
         }
         for (var i = 0; i < hl.length; i++) {
             hl[i].classList.remove('dark-hl');
